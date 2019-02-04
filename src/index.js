@@ -12,6 +12,11 @@ const httpLink = createHttpLink({
   uri:'http:localhost/4000'
 })
 
+const client = new ApolloClient({
+  link: httpLink,
+  cache: InMemoryCache()
+})
+
 ReactDOM.render(<App />, document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change
