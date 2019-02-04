@@ -1,6 +1,18 @@
 import React, { Component } from 'react'
 import Link from './Link'
 
+const FEED_QUERY = gql`
+  {
+    feed{
+      links{
+        id
+        description
+        url
+      }
+    }
+  }
+`;
+
 class LinkList extends Component {
   render() {
     const linksToRender = [
