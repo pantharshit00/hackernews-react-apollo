@@ -39,9 +39,7 @@ class CreateLink extends Component {
           />
         </div>
         <Mutation mutation={POST_MUTATION} variables={{ description, url }}>
-          {() => (
-            <button onClick={`... you'll implement this 🔜`}>Submit</button>
-          )}
+          {(postMutatation) =><button onClick={postMutatation}>Submit</button>}
         </Mutation>
       </div>
     );

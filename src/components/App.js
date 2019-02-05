@@ -4,8 +4,7 @@ import CreateLink from './CreateLink'
 
 class App extends Component {
   render() {
-    //return <LinkList />
-    return <CreateLink />
+    return <LinkList />
   }
 }
 
