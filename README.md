@@ -17,3 +17,4 @@ Open another terminal window and in the project directory, navigate to /server a
 ### `npm start`
 
 To start the GraphQLServer
+Open [http://localhost:4000](http://localhost:4000) to view it in the browser.
