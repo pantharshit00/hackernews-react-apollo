@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Mutation } from "react-apollo";
+import gql from "graphql-tag";
 
 const POST_MUTATION = gql`
   mutation PostMutation($description: String!, $url: String!) {
